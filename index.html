@@ -24,24 +24,32 @@
 <script rel="js" href="JavaScript/script.js" crossorigin="anonymous"-->
 <script type="text/javascript" src="/JavaScript/slide.js"></script>
 
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
 <body>
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <span class="logo me-auto"><a href="index.html"> <img src="Logo/Adhyetri-logo-2.png" alt="not img"></a></span>
+      <span class="logo"><a href="index.html"> <img src="Logo/Adhyetri-logo-2.png" alt="not img"></a></span>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto" href="#about">ABOUT</a></li>
           <li><a class="nav-link scrollto" href="#team">PROJECT</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">SERVICES</a></li>
+          <li><a class="nav-link scrollto" href="#services">SERVICES</a></li>
           <li><a class="nav-link scrollto" href="Required.html">WORK</a></li>
           <li><a class="nav-link scrollto" href="Form.html">CONTACT</a></li>
         </ul>
-      </nav>
-      <span class="me-auto"><a> <button onclick="login()">Login</button></a></span>
-      <span class="me-auto"><a> <button onclick="signup()">Register</button></a></span>
-      <div class="menu-toggle">
+      <input type="checkbox" id="check">
+      <label for="check" class="toggle">
         <i class="fa fa-bars" aria-hidden="true"></i>
-      </div>
+      </label>
+      </nav>
+      <span class="me-auto">
+        <a><button onclick="login()">Login</button></a>
+        <a><button onclick="signup()">Register</button></a>
+      </span>
     </div>
   </header>
   <!-- ================================= Hero Section ===================================-->
@@ -82,7 +90,7 @@
         <span class="dot"></span>
       </div>
       <div class="overDisplay">
-        <div class="formBox">
+        <div class="formBox fill-1">
           <div class="btnBox">
             <div id="clr"></div>
             <button type="button" class="toggleBtn" onclick="login()">LogIn</button>
@@ -109,7 +117,13 @@
         </div>
       </div>
     </div>
+    <div class="mobile-hero">
+        <span class="solan">
+          <p>Register for Free. Take Adhyetri as a oppertunity  for you carrier builder.</p>
+        </span>
+    </div>
   </section>
+<!--About Section HTML Code-->
   <section class="aboutSec">
     <div class="aboutBlock" id="about">
       <div class="blocksec">
@@ -119,6 +133,7 @@
       <p class="aboutPara">At Fectum, innovation is not just another word, it’s part of our company. The culture at Fectum is always based on the employees & customer's belive because it is a fundamental belief of inverting the organizational pyramid and engaging, enabling and empowering the front line. This is because we understand that this is the best placed to appreciate and understand the customers’ business and shape the roadmap to enhance the ‘value zone’ they have.</p>
     </div>
   </section>
+<!--Notify Section HTML Code-->
   <section class="notify" id="slog">
     <div class="blog">
       <span class="title h2">
@@ -137,8 +152,8 @@
         </div>
     </div>
   </section>
-
-  <section class="services">
+<!--Services Section HTML Code-->
+  <section class="services" id="services">
     <!--span><h3>Keys to Do</h3></span-->
     <div class="div-ser serv-txt">
       <h1>Doubt in your Carrier?</h1>
@@ -147,10 +162,474 @@
       </h5>
       <button>Explore More</button>
     </div>
-    <div class="img-serv">
+    <div class="img-serv" id="carrier">
       <img src="/images/Career-guide.jpg" alt="" srcset="">
     </div>
   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <footer>
     <div class="frow">

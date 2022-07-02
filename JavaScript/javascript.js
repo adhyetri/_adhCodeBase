@@ -43,3 +43,6 @@ function validate(){
         $('.navbar').toggleClass('active')
       })
   })
+
+  var click = document.getElementById("#mobileView");
+  

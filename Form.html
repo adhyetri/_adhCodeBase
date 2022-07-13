@@ -7,13 +7,17 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/style/stylesheet.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="join-us-form">
-        <div class="contain">
+        <div class="contain" id="contact">
             <div class="contactform">
                 <h2 class="heading">Contact Us</h2>
-                <i class="fas fa-times"></i>
+                <i class="fas fa-times" id="close"></i>
                 <div class="form">
                     <div class="inputForm area-50">
                         <input type="text">
@@ -62,5 +66,17 @@
             </div>
         </div>
     </section>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#close').click(function(){
+        //$('.contain').css('transform','scale(0)');
+        //$("#header").attr("href","index.html");
+        window.location.href = 'index.html';
+    });
+});
+</script>
 </body>
 </html>

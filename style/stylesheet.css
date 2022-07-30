@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 html
 {
-  scroll-padding-top: 50px;
+  scroll-padding-top: 60px;
 }
 @-webkit-keyframes animate-preloader {
   0% {
@@ -48,7 +48,7 @@ html
 }
 
 /*--------------------------------------------------------------
-# Desktop view header section stylesheet code
+# Header Section Desktop View CSS Code Start Here
 ---------------------------------------------------------------*/
 #header {
   background: #dddde2;
@@ -65,6 +65,7 @@ html
 }
 .fixed-top .navbar {
   padding: 0;
+  margin-left: 100px;
 }
 .fixed-top .navbar ul {
   margin: 0;
@@ -113,7 +114,7 @@ html
   float: right;*/
   position: relative;
     display: flex;
-    margin: 0 0 0 120px;
+    margin: 0 0 0 150px;
 }
 #header button{
   width: 80%;
@@ -126,296 +127,24 @@ html
 .fixed-top .mobile-menu .start{
   color: #f7032b;
 }
-/*--------------------------------------------------------------
-  Mobile view header section stylesheet code written here
---------------------------------------------------------------*/
-/*.toggle{
-  position: relative;
-  display: block;
-  float: right;
-  left: 350%;
-  font-size: 25px;
-  color: #f30e0e;
-}*/
 input#check{
   display: none;
 }
 label.toggle{
   display: none;
 }
-/*--------------------------------------------------------------------
-  Media query for the header section stylesheet code written here
---------------------------------------------------------------------*/
-@media only screen and (max-width: 360px) {
-  #header {
-    height: 70px;
-  }
-  #header img{
-    right: 50px;
-    width: 100%;
-    height: 42px;
-  }
-  #header .navbar{
-    padding: 0 50;
-  }
-#header nav ul{
-  width: 100%;
-  height: 50vh;
-  background-color: #0c61b5;
-  position: fixed;
-  top: 75px;
-  left: -100px;
-  display: none;
-  transition: 0.4s ease;
-  text-align: justify;
-}
-#header nav ul li {
-  display: block;
-  list-style: none;
-  align-items: center;
-}
-#header nav ul li a{
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 14px;
-  color: #2c4964;
-  white-space: nowrap;
-  transition: 0.3s;
-  border-bottom: 2px solid #fff;
-  padding: 5px 0px;
-}
-  #header .me-auto{
-    position: absolute;
-    display: flex;
-    right: 50px;
-  }
-  #check:checked ~ ul{
-    left: 0px;
-  }
-  input#check{
-    position: relative;
-    display: none;
-    left: 99px;
-  }
-  #header button{
-    width: 80%;
-    right: 30px;
-    padding: 20 5 20 5;
-    bottom: 2px;
-  }
-  label.toggle{
-  position: relative;
-  display: block;
-  float: right;
-  left: 160px;
-  font-size: 25px;
-  color: #f30e0e;
-  }
-}
-/*--------------------------------------------------------------
-# Header Section Mobile View CSS Code End
---------------------------------------------------------------*/
 .mobile-hero .solan{
   display: none;
 }
 /*--------------------------------------------------------------
-# Hero section mobile view css code
---------------------------------------------------------------*/
-@media only screen and (max-width: 360px) {
-  .crausalSlider .slider{
-    display: none;
-  }
-  .crausalSlider .mobile-hero{
-    bottom: 135px;
-    position: relative;
-    width: 100%;
-    height: 30vh;
-    background-image: url("../images/cover_img-6.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1.7;
-  }
-  .mobile-hero .solan{
-    width: 80%;
-    height: 60px;
-    top: 10px;
-    left: 10px;
-    background-color: goldenrod;
-    display: inline-grid;
-    position: relative;
-  }
-  .mobile-hero .solan p{
-    font-size: 14px;
-    font-weight: bold;
-    margin: 10px 15px;
-    color: #082744;
-  }
-}
-/*--------------------------------------------------------------
-# Mobile View Hero Section CSS Code End Here
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# About section mobile view css code
---------------------------------------------------------------*/
-@media only screen and (max-width: 360px) {
-.aboutSec{
-  position: absolute;
-  width: 100%;
-  bottom: 220px;
-  height: 30vh!important;
- }
- div.aboutBlock {
-  width: 100%;
-  height: 345px;
-  background: #0c338f!important;
- }
- div.blocksec
- {
-  left: 0;
-  top: 5px;
-  width: 100%;
-  height: 40px;
-  opacity: 0.8;
-  display: block;
-  position: absolute;
- }
- div.blocksec::after{
-  content: '';
-  left: 20px;
-  position: absolute;
-  margin: auto;
-  height: 2px;
-  background: #06233d;
-  width: 45%;
-  bottom: 0;
-  top: 0;
-}
-div.blocksec::before{
-display: none;
-}
- div.heading2{
-  border:  none!important;
-  left: 20px;
-  bottom: 0;
-  text-align: justify;
-  color: #f3f3f3;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  position: relative;
- }
- p.aboutPara{
-  width: 100%;
-  bottom: 20px;
-  left: 0;
-  position: relative;
-  color: #f3f3f3;
-  font-size: 10px;
-  opacity: 0.7;
-  text-align: justify;
- }
-}
-/*--------------------------------------------------------------
-# About Section Mobile View CSS Code End Here
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Notify section mobile view css code
---------------------------------------------------------------*/
-@media only screen and (max-width: 360px) {
-  section.notify{
-    position: relative;
-    width: 100%;
-    height: 30vh;
-    bottom: 0;
-  }
-  div.blog{
-    width: 100%;
-    height: 150px;
-    opacity: 0.3;
-    background-color: #2fc6e8;
-  }
-  span.title{
-    right: 40px;
-    width: 50%;
-    height: 60px;
-    position: relative;
-    background-color: #21d611;
-  }
-  p.iblog{
-    width: 100%;
-  }
-}
-/*--------------------------------------------------------------
-# Services Section Mobile View CSS Code
---------------------------------------------------------------*/
-@media only screen and (max-width: 990px) {
-  #services.services{
-    width: 100%;
-    height: 30vh;
-    background: green;
-    position: absolute;
-    /*--for testing purpose used top property--*/
-    top: 100px;
-  }
-  div.div-ser{
-    width: 100%;   
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: absolute;
-    height: 282px;
-  }
-  h1.helpSection{
-    position: relative;
-    top: 10px;
-    font-size: 30px!important;
-    font-weight: 600;
-    color: #0b0b0b;
-  }
-  div.img-serv{
-    width: 50%;
-    height: 250px;
-    top: 45px;
-    left: 455px;
-    position: relative;
-  }
-  #carrier img{
-    width: 100%;
-    height: 250px;
-    position: relative;
-    right: 0px;
-    top: 0px;
-  }
-  .div-ser button{
-    position: relative;
-    top: 25px;
-  }
-}
-
+# Header Section Desktop View CSS Code End Here
+---------------------------------------------------------------*/
 
 
 
 /*--------------------------------------------------------------
-# Navigation Navbar menu
-----------------------------------------------------------------
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-
+# Hero Section Desktop View CSS Code Start Here
+---------------------------------------------------------------*/
 .crausalSlider {
   height: 85vh;
   display: flex;
@@ -488,9 +217,1123 @@ display: none;
 .slider .navbtn .dot.active{
   background: #21d611;
 }
+/*--------------------------------------------------------------
+# Hero Section Desktop View CSS Code End Here
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# About Section Desktop View CSS Code Start Here
+---------------------------------------------------------------*/
+.aboutSec{
+  width: 100%;
+  height: 65vh;
+  background: #dfefff;
+}
+.aboutBlock{
+  padding: 50px 25px;
+}
+.blocksec{
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+.blocksec::after, .blocksec::before{
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: #06233d;
+  width: 30%;
+  top: 2%;
+}
+.blocksec::after{
+  left: 0;
+}
+.blocksec::before{
+  right: 0px;
+}
+.heading2{
+  width: 40%;
+  height: 40px;
+  border-left: 2px solid #06233d;
+  border-right: 2px solid #06233d;
+  left: 30%;
+  right: 0;
+  text-align: center;
+  display: inline-block;
+  bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.aboutPara{
+  text-align: justify;
+}
+/*--------------------------------------------------------------
+# About Section Desktop View CSS Code End Here
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Notify Section Desktop View CSS Code Start Here
+---------------------------------------------------------------*/
+
+.notify{
+  width: 100%;
+  height: 30vh;
+  background: #082744;
+}
+.notify .blog{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog .title{
+  height: 120px;
+  display: flex;
+  outline: none;
+  overflow: hidden;
+  color: #f5f4fb;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 80px;
+  padding-right: 100px;
+  margin-right: 80px;
+  border-right: 2px solid red;
+}
+.plog{
+  width: 50%;
+  height: 171px;
+  padding: 15px 10px;
+  line-height: 5px;
+  display: flow-root;
+  padding-left: 10px;
+  color: #f5f4fb;
+  position: relative;
+}
+.plog .arrow{
+  top: 30px;
+  position: relative;
+  display: flex;
+  margin: -10px;
+}
+.blog .h2 .colh2{
+  color: #f41111;
+  font-size: larger;
+  text-transform: capitalize;
+}
+.iblog{
+  top: 20px;
+  width: 90%;
+  display: block;
+  position: relative;
+  text-align: justify;
+  padding: 0px 20px;
+  line-height: 14px;
+}
+/*--------------------------------------------------------------
+# Notify Section Desktop View CSS Code End Here
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Service (Courses) Section Desktop View CSS Code Start Here
+--------------------------------------------------------------*/
+.service {
+  background-color: #fcfcfc;
+  }
+  
+  .service > h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 5px;
+  }
+  .col {
+  width: 300px;
+  text-align: center;
+  margin: 5px 70px 5px 50px;
+  float: left;
+  }
+  
+  .col:last-child {
+  border-right: none;
+  }
+  
+  .col > h3 {
+/* ----- top bottom right-left ----- */
+  padding: 10px 0px;
+  color: grey;
+  }
+  
+  .col > p {
+  padding-bottom: 20px;
+  }
+  
+  .col > a {
+  background-color: #089de3;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  border: solid white 2px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  }
+  
+  .col > a:hover {
+  background-color: #111111;
+  border: solid #111111 2px;
+  }
+  .service::after {
+  content: " ";
+  display: block;
+  clear: both;
+  *zoom: 1;
+  }
+/*--------------------------------------------------------------
+# Service (Courses) Section Desktop View CSS Code End Here
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# About (Why choose Adhyetri) Section Desktop View CSS Code Start Here
+------------------------------------------------------------------------*/
+.about {
+  background-color: #089de3;
+  min-height: 300px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  }
+  
+  .about > h1 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  }
+  
+  .about > img {
+  border: solid 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  object-fit: cover;
+  }
+  
+  .about > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  line-height: 25px;
+  }
+  
+  .about > a {
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  border: solid white 1px;
+  padding: 5px 20px;
+  }
+  
+  .about > a:hover {
+  background-color: #111111;
+  border: solid #111111 1px;
+  }
+/*------------------------------------------------------------------------
+# About (Why choose Adhyetri) Section Desktop View CSS Code End Here
+------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------
+# Services (Doubt in your carrier) Section Desktop View CSS Code Start Here
+-------------------------------------------------------------------------------*/
+.services{
+  width: 100%;
+  height: 65vh;
+  display: flex;
+}
+.div-ser{
+  width: 50%;
+  height: 370px;
+  padding-top: 60px;
+  padding-left: 30px;
+}
+.serv-txt h1{
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 45px;
+  color: #0b0b0b;
+}
+.serv-txt p{
+  position: relative;
+  padding-bottom: 20px;
+  text-align: justify;
+  margin: 0px 20px 5px 0px;
+  font-size: 15px;
+  color: #0b0b0b;
+}
+.div-ser button{
+  border: none;
+  width: 30%;
+  height: 35px;
+  background: #000;
+  outline: none;
+  color: #ffffff;
+}
+.div-ser button a{
+  color: #f3f3f3;
+}
+.img-serv{
+  width: 50%;
+  height: 370px;
+  position: relative;
+}
+.img-serv img{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  padding-top: 60px;
+}
+.services .serv-txt h5{
+  font-size: 18px;
+  text-align: justify;
+}
+/*-------------------------------------------------------------------------------
+# Services (Doubt in your carrier) Section Desktop View CSS Code End Here
+-------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------
+# Footer Section Desktop View CSS Code Start Here
+-------------------------------------------------------------------------------*/
+
+footer{
+  width: 100%;
+  position: absolute;
+  /*top: 0;*/
+  background: #000102;
+  color: #ffffff;
+  padding: 10px 0 0 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+.frow{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.fcol{
+  flex-basis: 22%;
+}
+.fcol:nth-child(2), .fcol:nth-child(3){
+  flex-basis: 15%;
+}
+.fcol .address{
+  font-size: 14px;
+  text-align: justify;
+}
+.fcol h3{
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+}
+.fcol h6{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  border-bottom: 1px solid #f6f4f4;
+  cursor: pointer;
+}
+.fcol ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+.fcol ul li .anchor{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  margin-left: -30px;
+}
+.foo{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #bdf5f4;
+  margin-bottom: 50px;
+}
+.foo input{
+  width: 100%;
+  background: transparent;
+  color: #fffff8;
+  border: 0;
+  outline: none;
+}
+.foo button{
+  background: transparent;
+  outline: navajowhite;
+  cursor: pointer;
+  border: 0;
+}
+.foo button .fa-solid{
+  font-size: 16px;
+  color: #f6f4f4;
+}
+.social-icon .fa-brands{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+  background: #f5f4fb;
+  color: #01070c;
+  border-radius: 50%;
+}
+hr{
+  width: 100%;
+  border: none;
+  border: 1px solid #0c61b5;
+  margin-bottom: 15px auto;
+}
+footer .copyb{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 6px;
+}
+footer .copyright{
+  margin-left: 255px;
+}
+footer .underline{
+  width: 50%;
+  position: absolute;
+  background: #f5f4fb;
+  left: 0;
+  top: 40px;
+  border-radius: 10px;
+  height: 3px;
+  overflow: hidden;
+}
+/*-------------------------------------------------------------------------------
+# Footer Section Desktop View CSS Code End Here
+-------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+# Contact Information Required Desktop View CSS Code Start Here
+---------------------------------------------------------------------*/
+.join-us-form{
+  width: 100%;
+  height: 100%;
+  background: #f9f1ff;
+}
+.contain{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  z-index: 1000;
+}
+.contain .contactform{
+  top: 75px;
+  width: 85%;
+  left: 90px;
+  height: 75%;
+  position: relative;
+  padding-left: 70px;
+  padding-right: 70px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.9);
+}
+.contain .contactform i{
+  left: 95%;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+}
+.contain .contactform h2.heading{
+  position: relative;
+  top: 28px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+.contain .contactform .form{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+.contain .contactform .form .inputForm{
+  position: relative;
+  margin-bottom: 25px;
+}
+.contain .contactform .form .inputForm.area-50{
+ width: 45%;
+}
+.contain .contactform .form .inputForm.area-100{
+  width: 100%;
+}
+.contain .contactform .form .inputForm.area-100 .message{
+  width: 100%;
+  height: 100px;
+  padding: 0 0 60px 10px;
+  border-radius: 5px;
+}
+.contain .contactform .form .inputForm input{
+   width: 100%;
+   resize: none;
+   /*padding: 5px 0;*/
+   font-size: 16px;
+   font-weight: 300;
+   color: #0f0b0b;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #0f0b0b;
+}
+.contain .contactform .form .inputForm span{
+  position: relative;
+    top: 5px;
+}
+.contain .contactform .form .inputForm input[type="submit"]{
+   position: relative;
+   cursor: pointer;
+   background: #165658;
+   color: #f3f3f3;
+   border: none;
+   max-width: 150px;
+   padding: 12px;
+}
+.contain .contactform .form .inputForm.next{
+  position: relative;
+  cursor: pointer;
+  float: right;
+  margin-left: 80%;
+  top: -65px;
+  background: #165658;
+  color: #f3f3f3;
+  border: none;
+  max-width: 150px;
+}
+.contain .contactform .form .inputForm.next i{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  font-size: 16px;
+}
+.contain .contactform .form .inputForm input[type="submit"]:hover{
+  background: #1a2c5e;
+}
+/*--------------------------------------------------------------------------------
+# Contact Information Required Desktop View CSS Code End Here
+--------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------
+  Header Section Mobile View CSS Code Start Here
+--------------------------------------------------------------------*/
+@media only screen and (max-width: 360px) {
+  #header {
+    height: 70px;
+  }
+  #header img{
+    right: 50px;
+    width: 100%;
+    height: 42px;
+  }
+  #header .navbar{
+    padding: 0 50;
+  }
+#header nav ul{
+  width: 100%;
+  height: 50vh;
+  background-color: #0c61b5;
+  position: fixed;
+  top: 75px;
+  left: -100px;
+  display: none;
+  transition: 0.4s ease;
+  text-align: justify;
+}
+#header nav ul li {
+  display: block;
+  list-style: none;
+  align-items: center;
+}
+#header nav ul li a{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #2c4964;
+  white-space: nowrap;
+  transition: 0.3s;
+  border-bottom: 2px solid #fff;
+  padding: 5px 0px;
+}
+  #header .me-auto{
+    position: absolute;
+    display: flex;
+    right: 100px;
+  }
+  #check:checked ~ ul{
+    left: 0px;
+  }
+  input#check{
+    position: relative;
+    display: none;
+    left: 99px;
+  }
+  #header button{
+    width: 100%;
+    right: 40px;
+    padding: 20 5 20 5;
+    bottom: 2px;
+  }
+  label.toggle{
+  position: relative;
+  display: block;
+  float: right;
+  left: 60px;
+  font-size: 25px;
+  color: #f30e0e;
+  }
+}
+/*--------------------------------------------------------------------
+  Header Section Mobile View CSS Code End Here
+--------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Hero Section Mobile View CSS Code Start Here
+---------------------------------------------------------------*/
+@media only screen and (max-width: 360px) {
+  .crausalSlider .slider{
+    display: none;
+  }
+  .crausalSlider .mobile-hero{
+    bottom: 126px; /* --- 150px or 130px --- */
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background-image: url("../images/cover_img-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1.7;
+  }
+  .mobile-hero .solan{
+    width: 80%;
+    height: 60px;
+    top: 10px;
+    left: 10px;
+    background-color: goldenrod;
+    display: inline-grid;
+    position: relative;
+  }
+  .mobile-hero .solan p{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 15px;
+    color: #082744;
+  }
+}
+/*--------------------------------------------------------------
+# Hero Section Mobile View CSS Code End Here
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# About Section Mobile View CSS Code Start Here
+---------------------------------------------------------------*/
+@media only screen and (max-width: 360px) {
+section.aboutSec{
+  position: relative;
+  width: 100%;
+  bottom: 325px;
+  height: 52vh;
+ }
+ div.aboutBlock {
+  padding: 60px 10px;
+  background: #490363;
+ }
+ div.blocksec
+ {
+  left: 0;
+  top: 5px;
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+ }
+ div.blocksec::after{
+  content: '';
+  left: 10px;
+  position: absolute;
+  margin: auto;
+  height: 3px;
+  background: #06233d;
+  width: 40%;
+  bottom: 0;
+  top: 5px;
+}
+div.blocksec::before{
+display: none;
+}
+ div.heading2{
+  border:  none!important;
+  left: 10px;
+  bottom: 0;
+  text-align: justify;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+ }
+ p.aboutPara{
+  width: 100%;
+  bottom: 15px;
+  left: 0;
+  position: relative;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 1;
+  text-align: justify;
+ }
+}
+/*--------------------------------------------------------------
+# About Section Mobile View CSS Code End Here
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Notify Section Mobile View CSS Code Start Here
+--------------------------------------------------------------*/
+@media only screen and (max-width: 360px) {
+  section.notify{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    bottom: 166px;
+  }
+  div.blog{
+    position: relative;
+    height: 180px;
+  }
+  div.title.h2{
+    width: 50%;
+    height: 120px;
+    margin: 0 0;
+    padding: 0 0;
+    bottom: 10px;
+    border-radius: unset;
+  }
+  h2.sline{
+    font-size: 15px;
+    margin: 0 0;
+  }
+  div.plog{
+    width: 50%;
+    margin: 0 6px;
+    position: relative;
+    bottom: 25px;
+  }
+  p.iblog{
+    font-size: 10px;
+    margin: 0 7px;
+    padding: 6px 0;
+  }
+  i.fa-solid.fa-arrow-right.arrow{
+    font-size: 12px;
+    top: 40px;
+  }
+}
+/*--------------------------------------------------------------
+# Notify Section Mobile View CSS Code End Here
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Service (Course) Section Mobile View CSS Code Start Here
+--------------------------------------------------------------*/
+@media only screen and (max-width: 360px) {
+  section.service{
+    position: relative;
+    bottom: 166px;
+  }
+  div.col{
+    margin-left: 20px;
+    border: none;
+  }
+}
+/*--------------------------------------------------------------
+# Service (Course) Section Mobile View CSS Code End Here
+--------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+# About (Why Choose Adhyetri) Section Mobile View CSS Code Start Here
+----------------------------------------------------------------------*/
+  @media only screen and (max-width: 360px) {
+    section.about{
+      position: relative;
+      bottom: 166px;
+    }
+    p.whyus{
+      font-size: 14px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+/*----------------------------------------------------------------------
+# About (Why Choose Adhyetri) Section Mobile View CSS Code End Here
+----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------
+# Services (Doubt in your carrier) Section Mobile View CSS Code Start Here
+-----------------------------------------------------------------------------*/
+@media only screen and (max-width: 360px) {
+  #services.services{
+    width: 100%;
+    height: 60px;
+    background-image: url(./images/Career-guide.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 166px;
+  }
+  div.div-ser{
+    width: 100%;   
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    height: 180px;
+  }
+  h1.helpSection{
+    position: relative;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b0b0b;
+  }
+  p.servicepara{
+    font-size: 14px;
+  }
+  div.img-serv{
+    width: 50%;
+    height: 180px;
+    top: 0;
+    left: 160px;
+    position: relative;
+  }
+  #carrier img{
+    width: 100%;
+    height: 180px;
+    position: relative;
+    right: 0;
+    top: 0;
+    display: none;
+    margin: 0 0;
+  }
+  button.joinus{
+    position: relative;
+    bottom: 0;
+  }
+  button.joinus a{
+    color: #ffffff;
+  }
+}
+/*------------------------------------------------------------------------------
+# Services (Doubt in your carrier) Section Mobile View CSS Code End Here
+------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+# Footer Section Mobile View CSS Code Start Here
+------------------------------------------------------------------------------*/
+@media only screen and (max-width: 360px) {
+p.copyright{
+  right: 255px;
+  width: 100%;
+  position: relative;
+  }
+  footer{
+      bottom: unset;
+  }
+  .fcol{
+    flex-basis: 100%;
+  }
+  .fcol:nth-child(2), .fcol:nth-child(3){
+    flex-basis: 100%;
+  }
+}
+/*------------------------------------------------------------------------------
+# Footer Section Mobile View CSS Code End Here
+------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------- 
+# Contact Information Required Mobile View CSS Code Start Here
+---------------------------------------------------------------------------------*/
+@media only screen and (max-width: 360px) {
+  .join-us-form{
+    width: 100%;
+    height: 100%;
+  }
+  .contain{
+      width: 100%;
+      min-width: auto;
+      box-shadow: 0 20px 50px rgba(0, 0, 0/ 90%);
+      display: none;
+      position: relative;
+      left: 0;
+      margin: 0;
+    }
+  .contain{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contain .contactform{
+    width: 100%;
+    height: 700px;
+    padding: 25px;
+    box-shadow: none;
+    top: 0;
+    left: 0;
+  }
+  .contain .contactform .form .inputForm.area-50{
+    width: 100%;
+  }
+}
+/*-------------------------------------------------------------------------------- 
+# Contact Information Required Mobile View CSS Code End Here
+---------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #1977cc;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #298ce5;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.datepicker-dropdown {
+  padding: 20px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media only screen and (max-width: 360px) {
+  /*.join-us-form::before{
+      display: none;
+  }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------------------------------------
                     Login & Sign In
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .slider .overDisplay{
   z-index: 2;
   position: absolute;
@@ -575,12 +1418,12 @@ display: none;
   position: absolute;
   margin: 20px;
   padding: 10px;
-  /*border-radius: 0px;*/
+  /*border-radius: 0px;
   background: #082744;
 }
 .check-box{
   margin-top: 10px;
-  /*padding: 10px 0;*/
+  /*padding: 10px 0;
 }
 .rem{
   color: #d32525;
@@ -596,529 +1439,37 @@ display: none;
   left: 400px;
 }
 
-/************* ---------------------------------------  
----------------- About Section  ---------------------- 
-------------------------------------******************/
-.aboutSec{
-  width: 100%;
-  height: 65vh;
-  background: #dfefff;
-}
-.aboutBlock{
-  padding: 50px 25px;
-}
-.blocksec{
-  width: 100%;
-  height: 45px;
-  position: relative;
-}
-.blocksec::after, .blocksec::before{
-  content: '';
-  position: absolute;
-  margin: auto;
-  height: 2px;
-  background: #06233d;
-  width: 30%;
-  top: 2%;
-}
-.blocksec::after{
-  left: 0;
-}
-.blocksec::before{
-  right: 0px;
-}
-.heading2{
-  width: 40%;
-  height: 40px;
-  border-left: 2px solid #06233d;
-  border-right: 2px solid #06233d;
-  left: 30%;
-  right: 0;
-  text-align: center;
-  display: inline-block;
-  /*justify-content: center;*/
-  bottom: 18px;
-  font-size: 18px;
-  /*padding: 5px 35px;*/
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-}
-.aboutPara{
-  text-align: justify;
-}
-/*********************************************************************
-                   Notify Section Start
-*********************************************************************/
-.notify{
-  width: 100%;
-  height: 30vh;
-  background: #082744;
-}
-.notify .blog{
-  width: 100%;
-  height: 171px;
-  /*position: relative;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.blog .title{
-  width: 50%;
-  height: 120px;
-  display: flex;
-  outline: none;
-  overflow: hidden;
-  color: #f5f4fb;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  right: 60px;
-  border-radius: 80px;
-  border-right: 2px solid red;
-}
-.plog{
-  /*top: 27px;*/
-  width: 50%;
-  height: 171px;
-  padding: 15px 10px;
-  line-height: 5px;
-  display: flow-root;
-  padding-left: 10px;
-  color: #f5f4fb;
-  position: relative;
-}
-.plog .arrow{
-  top: 30px;
-  position: relative;
-  display: flex;
-  margin: -10px;
-}
-/*.blog p{
-  width: 100%;
-  display: block;
-  text-align: center;
-  border-right: 1px solid red;
-  color: #f5f4fb;
-  position: relative;
-}*/
-.blog .h2 .colh2{
-  color: #f41111;
-  font-size: larger;
-  text-transform: capitalize;
-}
-.iblog{
-  top: 20px;
-  width: 90%;
-  display: block;
-  position: relative;
-  text-align: justify;
-  padding: 0px 20px;
-  line-height: 14px;
-}
 
-/*------------------------------------------------------
-                      Footer CSS                        
-------------------------------------------------------*/
-footer{
-  width: 100%;
-  position: absolute;
-  /*top: 0;*/
-  background: #000102;
-  color: #ffffff;
-  padding: 10px 0 0 0;
-  font-size: 12px;
-  line-height: 15px;
-}
-.frow{
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.fcol{
-  flex-basis: 25%;
-}
-.fcol:nth-child(2), .fcol:nth-child(3){
-  flex-basis: 15%;
-}
-/*.flogo{
-  width: 90%;
-  height: 40px;
-  margin-bottom: 30px;
-  background: #f1f1ea;
-  opacity: 0.2;
-  color: #f5f4fb;
-}*/
-.fcol .address{
-  font-size: 14px;
-  text-align: justify;
-}
-.fcol h3{
-  width: 100%;
-  margin-bottom: 30px;
-  position: relative;
-}
-.fcol h6{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-size: 12px;
-  border-bottom: 1px solid #f6f4f4;
-  cursor: pointer;
-}
-.fcol ul li{
-  list-style: none;
-  margin-bottom: 12px;
-}
-.fcol ul li .anchor{
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-  margin-left: -30px;
-}
-.foo{
-  padding-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #bdf5f4;
-  margin-bottom: 50px;
-}
-.foo input{
-  width: 100%;
-  background: transparent;
-  color: #fffff8;
-  border: 0;
-  outline: none;
-}
-.foo button{
-  background: transparent;
-  outline: navajowhite;
-  cursor: pointer;
-  border: 0;
-}
-.foo button .fa-solid{
-  font-size: 16px;
-  color: #f6f4f4;
-}
-.social-icon .fa-brands{
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 14px;
-  margin-right: 5px;
-  background: #f5f4fb;
-  color: #01070c;
-  border-radius: 50%;
-}
-hr{
-  width: 100%;
-  border: none;
-  border: 1px solid #0c61b5;
-  margin-bottom: 15px auto;
-}
-footer .copyb{
-  position: relative;
-  width: 100%;
-  height: 50px;
-  line-height: 6px;
-}
-footer .copyright{
-  margin-left: 70%;
-}
-footer .underline{
-  width: 50%;
-  position: absolute;
-  background: #f5f4fb;
-  left: 0;
-  top: 40px;
-  border-radius: 10px;
-  height: 3px;
-  overflow: hidden;
-}
-/*footer .underline span{
-  width: 60px;
-  height: 100%;
-  position: absolute;
-  border-radius: 10px;
-  background: #000102;
-  left: 0px;
-  top: 0;
-  animation: moving 1s linear infinite;
-}
-@keyframes moving{
-  0%{
-    left: -10px;
-  }
-  100%{
-    left: 100%;
-  }
-}*/
-@media (max-width: 700px){
-  footer{
-    bottom: unset;
-  }
-  .fcol{
-    flex-basis: 100%;
-  }
-  .fcol:nth-child(2), .fcol:nth-child(3){
-    flex-basis: 100%;
-  }
-}
-/*--------------------------------------------------
-  Services Section CSS start for Desktop View
---------------------------------------------------*/
-.services{
-  width: 100%;
-  height: 65vh;
-  display: flex;
-}
-.div-ser{
-  width: 50%;
-  height: 370px;
-  padding-top: 60px;
-  padding-left: 30px;
-}
-.serv-txt h1{
-  position: relative;
-  padding-bottom: 20px;
-  font-size: 45px;
-  color: #0b0b0b;
-}
-.serv-txt p{
-  position: relative;
-  padding-bottom: 20px;
-  text-align: justify;
-  margin: 0px 20px 5px 0px;
-  font-size: 15px;
-  color: #0b0b0b;
-}
-.div-ser button{
-  border: none;
-  width: 30%;
-  height: 50px;
-  background: #000;
-  outline: none;
-  color: #ffffff;
-}
-.img-serv{
-  width: 50%;
-  height: 370px;
-  position: relative;
-}
-.img-serv img{
-  width: 100%;
-  height: 300px;
-  position: relative;
-  padding-top: 60px;
-}
-.services .serv-txt h5{
-  font-size: 18px;
-  text-align: justify;
-}
-/*--------------------- End Services --------------------------*/
 
-/*--------------------- Contact Information Required -----------*/
-.join-us-form{
-  width: 100%;
-  height: 100%;
-  background: #f9f1ff;
-}
-.contain{
-  position: relative;
-  width: 100%;
-  height: 569px;
-  display: flex;
-  z-index: 1000;
-}
-.contain .contactform{
-  top: 75px;
-  width: 85%;
-  left: 90px;
-  height: 75%;
-  position: relative;
-  padding-left: 70px;
-  padding-right: 70px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.9);
-}
-.contain .contactform i{
-  left: 95%;
-  font-size: 22px;
-  cursor: pointer;
-  position: relative;
-}
-.contain .contactform h2.heading{
-  position: relative;
-  top: 28px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #000;
-}
-.contain .contactform .form{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 25px;
-}
-.contain .contactform .form .inputForm{
-  position: relative;
-  margin-bottom: 25px;
-}
-.contain .contactform .form .inputForm.area-50{
- width: 45%;
-}
-.contain .contactform .form .inputForm.area-100{
-  width: 100%;
-}
-.contain .contactform .form .inputForm input{
-   width: 100%;
-   resize: none;
-   /*padding: 5px 0;*/
-   font-size: 16px;
-   font-weight: 300;
-   color: #0f0b0b;
-   border: none;
-   outline: none;
-   border-bottom: 1px solid #0f0b0b;
-}
-.contain .contactform .form .inputForm span{
-  position: relative;
-    top: 5px;
-}
-.contain .contactform .form .inputForm input[type="submit"]{
-   position: relative;
-   cursor: pointer;
-   background: #165658;
-   color: #f3f3f3;
-   border: none;
-   max-width: 150px;
-   padding: 12px;
-}
-.contain .contactform .form .inputForm.next{
-  position: relative;
-  cursor: pointer;
-  float: right;
-  margin-left: 80%;
-  top: -65px;
-  background: #165658;
-  color: #f3f3f3;
-  border: none;
-  max-width: 150px;
-  /*padding: 12px;*/
-}
-.contain .contactform .form .inputForm.next i{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 100px;
-  font-size: 16px;
-}
-.contain .contactform .form .inputForm input[type="submit"]:hover{
-  background: #1a2c5e;
-}
 
-/*-------------------------------------------------------------------------- 
-               Media Queries for Mobile view 
---------------------------------------------------------------------------
-@media (max-width: 1200px) {
-  .contain{
-      width: 90%;
-      min-width: auto;
-      margin: 20px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
-  }
-  .contactinfo{
-      top: 0;
-      height: 500px;
-      position: relative;
-      box-shadow: none;
-  }
-  .contain .contactform{
-      position: relative;
-      width: calc(100% - 350px);
-      padding-left: 0;
-      margin-left: 0;
-      padding: 40px;
-      height: 550px;
-      box-shadow: none
-  }
-}
-@media (max-width: 991px) {
-  .join-us-form{
-      background: #fff38e;
-  }
-  .join-us-form::before{
-      display: none;
-  }
-  .contain{
-      display: flex;
-      flex-direction: column-reverse;
-  }
-  .contain .contactform{
-      width: 100%;
-      height: auto;
-  }
-  .contain .contactinfo{
-      width: 100%;
-      height: auto;
-  }
-}
-@media (max-width: 600px) {
-  .contain .contactform{
-      padding: 25px;
-  }
-  .contain .contactinfo{
-      padding: 25px;
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  .contain .contactform .form .inputForm.area-50{
-      width: 100%;
-  }
-}
-/*--------------------- End Contact Information ----------------*/
+
+
+
+
+
 
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #1977cc;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
+# Navigation Navbar menu
+----------------------------------------------------------------
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
 }
 
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
 
-.back-to-top:hover {
-  background: #298ce5;
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.datepicker-dropdown {
-  padding: 20px !important;
-}
+/*------------------------------------------------------------------------------
+  Mobile view header section stylesheet code written here (Unwanted Code)
+------------------------------------------------------------------------------*/
+/*.toggle{
+  position: relative;
+  display: block;
+  float: right;
+  left: 350%;
+  font-size: 25px;
+  color: #f30e0e;
+}*/

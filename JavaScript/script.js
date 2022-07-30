@@ -19,7 +19,7 @@ btns.forEach((cursorbtn, i) => {
     });
 });
 // Javascript navigation for the auto-play
-var repeat = function(activeclass){
+var repeat = function(active){
 let active = document.getElementsByClassName('.active');
 let i = 1;
 
